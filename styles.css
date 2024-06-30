@@ -1,3 +1,39 @@
 html {
     background-color: whitesmoke;
 }
+
+h1 {
+    text-align: center;
+}
+
+#parent {
+    border: 2px solid black;
+    min-width: fit-content;
+    max-width: 25%;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+#child {
+    /* border: 1px solid purple; */
+    min-width: fit-content;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.input_paragraph {
+    text-align: center;
+}
+
+footer {
+    min-width: fit-content;
+    max-width: 25%;
+    margin: 3% auto;
+    text-align: center;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+
+/* #all {
+    border: 3px solid yellowgreen;
+} */
