@@ -4,15 +4,14 @@ const paragraph = document.querySelector("#result");
 
 button.onclick = function check()
 {
-    let punctuation = /[.,\/#!$%\^&\*;:{}=\-_`~() ]/;
-    let str = textInput.value.split(punctuation).join('');
+    let str = textInput.value.toLowerCase().replace(/[^a-z0-9]/, '');
     const string = textInput.value;
     let rev = str.split('').reverse().join('');
     if (str === "")
         alert("Please input a value");
     else
     {
-        if (rev.toLowerCase() === str.toLowerCase())
+        if (rev === str)
             paragraph.innerHTML = `<span style="font-weight: bold">${string}</span> is a palindrome.`
         else
             paragraph.innerHTML = `<b>${string}</b> is not a palindrome.`
